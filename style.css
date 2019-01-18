@@ -1,0 +1,47 @@
+h1, h2 {
+  font-family: Lato;
+}
+.box1, .box2, .box3 {
+  margin: 15px;
+  display: flex;
+}
+.box1 {
+  background: cornflowerblue;
+  position: relative;
+}
+.box2 {
+  position:relative;
+  background: green;
+  width: 200px;
+}
+.box3 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: crimson;
+}
+
+ /* Test2 */
+
+@media all and (min-width: 570px) {
+  .cards {
+    display: flex;
+    justify-content: space-between
+  }
+}
+
+.card {
+  background: cornflowerblue;
+  border-radius: 5px;
+  padding: 15px;
+  margin: 8px;
+  box-sizing: border-box;
+  flex: 1 1 0;
+  /* flex: 0 1 32%; */
+  /* flex: 0 1 calc(32% - 30px); */
+}
+
+.card2 {
+  background: wheat;
+  flex: 3 3 0;
+}
